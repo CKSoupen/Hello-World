@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #0099F7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#level, #restart, #games-played{
+    width:100%;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.4rem;
+    color:#FEF2BF; 
+    text-shadow: 0.3rem 0.4rem 0.4rem #000000b2;
+    padding: 3rem 0;
+}
+ #restart{
+     position: absolute;
+     top: 25%;
+     line-height: 2;
+ }
+.container{
+
+    width: 100%;
+    display: flex;
+    height: 60vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.gamepad{
+    width: 20rem;
+    height: 20rem;
+    border: 0.5rem solid #0000005d;
+    border-radius: 0.4rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+.pressed{
+    box-shadow: 0 0 20px white;
+    opacity: 0.8;
+}
+.red{
+background-color: red;
+order: 1;
+}
+.blue{
+    background-color: blue;
+    order: 0;
+}
+.yellow{
+    background-color: yellow;
+    order: 3;
+}
+.green{
+    background-color:green;
+    order: 2;
+}
+
+.game-over {
+    background: red;
+    opacity: 0.8;
+  }
